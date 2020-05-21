@@ -57,6 +57,6 @@
       // delete offer
       nomeOfferta.innerHTML = "";
       // hide ticket
-      sectionTicket.classList.add("ms_hidden");;
+      sectionTicket.classList.add("ms_hidden");
     }
   );
