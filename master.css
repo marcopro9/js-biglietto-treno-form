@@ -1,0 +1,29 @@
+body{
+  background-color: lightblue;
+}
+.ms_calcticket{
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 25px 0;
+  margin-top: 25px;
+}
+.ms_title{
+  margin-bottom: 25px;
+}
+.ms_ticket{
+  padding: 25px;
+}
+.ms_input{
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  padding-left: 10px;
+  height: 30px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.ms_visible{
+  display: block;
+}
+.ms_hidden{
+  display: none;
+}
