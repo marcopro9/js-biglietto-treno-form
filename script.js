@@ -57,6 +57,6 @@
       // delete offer
       nomeOfferta.innerHTML = "";
       // hide ticket
-      sectionTicket.className = sectionTicket.classList - " ms_visible";
+      sectionTicket.classList.add("ms_hidden");;
     }
   );
