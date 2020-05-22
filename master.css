@@ -1,5 +1,5 @@
 body{
-  background-color: lightblue;
+  background-color: #b91750;
 }
 .ms_calcticket{
   background-color: #fff;
@@ -10,9 +10,6 @@ body{
 .ms_title{
   margin-bottom: 25px;
 }
-.ms_ticket{
-  padding: 25px;
-}
 .ms_input{
   border: 1px solid lightgrey;
   border-radius: 5px;
@@ -20,6 +17,22 @@ body{
   height: 30px;
   margin-right: 10px;
   margin-bottom: 10px;
+}
+.ms_input:focus{
+  background-color: #ff74a5;
+}
+.ms_ticket{
+  padding: 0 20px 0;
+}
+.ms_grey{
+  background-color: lightgrey;
+}
+.ms_pad{
+  padding: 10px;
+}
+.ms_categories{
+  font-weight: 700;
+  display: block;
 }
 .ms_visible{
   display: block;

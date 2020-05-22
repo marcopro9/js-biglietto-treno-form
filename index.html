@@ -9,6 +9,7 @@
   <body>
     <main>
 
+      <!-- section input data -->
       <section class="ms_calcticket container text-center">
         <h2 class="ms_title">CALCOLA IL TUO BIGLIETTO</h2>
         <label class="sr-only">Nome e Cognome</label>
@@ -24,17 +25,39 @@
         <button id="form-calcola" class="btn btn-light" type="button" name="button">Calcola</button>
         <button id="form-annulla" class="btn btn-light" type="button" name="button">Annulla</button>
       </section>
+      <!-- section input data end -->
 
-      <section id="ticket" class="ms_calcticket container ms_hidden">
+      <!-- section ticket -->
+      <section id="ticket" class="container ms_calcticket ms_hidden">
         <h2 class="ms_title text-center">IL TUO BIGLIETTO</h2>
         <div class="ms_ticket">
-          <p>NOME PASSEGGERO: <span id="nome-ticket"> </span></p>
-          <p>OFFERTA: <span id="offerta-ticket"> </span></p>
-          <p>CARROZZA: <span id="carrozza-ticket"> </span></p>
-          <p>CODICE CP: <span id="codicecp-ticket"> </span></p>
-          <p>COSTO: <span id="costo-ticket"> </span></p>
+          <h4>DETTAGLIO PASSEGGERI</h4>
+          <div class="ms_pad row">
+            <div class="ms_grey ms_pad col-12 col-md-3 ">
+              <span class="ms_categories">NOME PASSEGGERO: </span>
+              <span id="nome-ticket"> </span>
+            </div>
+            <div class="ms_pad col-12 col-md-2">
+              <span class="ms_categories">OFFERTA:  </span>
+              <span id="offerta-ticket"> </span>
+            </div>
+            <div class="ms_pad col-12 col-md-2">
+              <span class="ms_categories">CARROZZA: </span>
+              <span id="carrozza-ticket"> </span>
+            </div>
+            <div class="ms_pad col-12 col-md-3">
+              <span class="ms_categories">CODICE CP: </span>
+              <span id="codicecp-ticket"> </span>
+            </div>
+            <div class="ms_pad col-12 col-md-2">
+              <span class="ms_categories">COSTO: </span>
+                <span id="costo-ticket"> </span>
+            </div>
+          </div>
         </div>
       </section>
+      <!-- section ticket end -->
+
     </main>
     <script src="script.js" type="text/javascript"></script>
   </body>
