@@ -13,9 +13,9 @@
       <section class="ms_calcticket container text-center">
         <h2 class="ms_title">CALCOLA IL TUO BIGLIETTO</h2>
         <label class="sr-only">Nome e Cognome</label>
-        <input id="form-nome" class="ms_input" type="text" placeholder="Nome e Cognome" value=" ">
+        <input id="form-nome" class="ms_input" type="text" placeholder="Nome e Cognome" value="">
         <label class="sr-only">KM da percorrere</label>
-        <input id="form-km" class="ms_input" type="number" placeholder="Km totali" value=" ">
+        <input id="form-km" class="ms_input" type="number" placeholder="Km totali" value="">
         <label class="sr-only">Tipologia di sconto</label>
         <select id="form-eta" class="ms_input">
           <option value="under">Under 18</option>
@@ -24,6 +24,9 @@
         </select>
         <button id="form-calcola" class="btn btn-light" type="button" name="button">Calcola</button>
         <button id="form-annulla" class="btn btn-light" type="button" name="button">Annulla</button>
+        <div id="form-errore" class="ms_hidden">
+          <p>Non hai compilato correttamente il form</p>
+        </div>
       </section>
       <!-- section input data end -->
 
@@ -31,11 +34,11 @@
       <section id="ticket" class="container ms_calcticket ms_hidden">
         <h2 class="ms_title text-center">IL TUO BIGLIETTO</h2>
         <div class="ms_ticket">
-          <h4>DETTAGLIO PASSEGGERI</h4>
+          <h5>DETTAGLIO PASSEGGERI</h5>
           <div class="ms_pad row">
             <div class="ms_grey ms_pad col-12 col-md-3 ">
               <span class="ms_categories">NOME PASSEGGERO: </span>
-              <span id="nome-ticket"> </span>
+              <span id="nome-ticket" class="text-break"> </span>
             </div>
             <div class="ms_pad col-12 col-md-2">
               <span class="ms_categories">OFFERTA:  </span>
