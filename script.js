@@ -26,22 +26,23 @@
       // condition error
       if (nome.length == 0 || isNaN(km)){
         errore.className = "ms_visible";
-        sectionTicket.classList.add("ms_hidden");        
+        sectionTicket.classList.add("ms_hidden");
       } else {
           // hide error
             errore.className = "ms_hidden";
           // variables price
             var prezzo = km * 0.21;
             var offerta = "Prezzo intero";
+            // calc sales
+            if (eta == "under"){
+              prezzo = prezzo - (prezzo * 20 / 100);
+              offerta = "Sconto Under 18";
+            } else if (eta == "over"){
+                prezzo = prezzo - (prezzo * 40 / 100);
+                offerta = "Sconto Over 65";
+              }
         }
-        // calc sales
-        if (eta == "under"){
-          prezzo = prezzo - (prezzo * 20 / 100);
-          offerta = "Sconto Under 18";
-        } else if (eta == "over"){
-            prezzo = prezzo - (prezzo * 40 / 100);
-            offerta = "Sconto Over 65";
-          }
+
       // print on html
         nomeTicket.innerHTML = formNome.value;
         nomeOfferta.innerHTML = offerta;

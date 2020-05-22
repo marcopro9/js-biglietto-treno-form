@@ -34,9 +34,9 @@ body{
   font-weight: 700;
   display: block;
 }
-.ms_visible{
-  display: block;
-}
 .ms_hidden{
   display: none;
+}
+.ms_visible{
+  display: block;
 }
