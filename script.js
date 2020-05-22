@@ -16,19 +16,18 @@
     var codice = document.getElementById('codicecp-ticket');
     var costo = document.getElementById('costo-ticket');
 
-
-
 // events
   buttonGenera.addEventListener("click",
     function (){
       // variables to calc costs
-      var km = parseInt(formKm.value);
-      var eta = formEta.value;
-      var nome = formNome.value;
+        var km = parseInt(formKm.value);
+        var eta = formEta.value;
+        var nome = formNome.value;
       // condition error
-      if (nome.lenght == 0 || isNaN(km)){
+      if (nome.length == 0 || isNaN(km)){
         errore.className = "ms_visible";
-      }else {
+        sectionTicket.classList.add("ms_hidden");        
+      } else {
           // hide error
             errore.className = "ms_hidden";
           // variables price
@@ -44,30 +43,30 @@
             offerta = "Sconto Over 65";
           }
       // print on html
-      nomeTicket.innerHTML = formNome.value;
-      nomeOfferta.innerHTML = offerta;
-      carrozza.innerHTML = Math.floor(Math.random() * 10) +1;
-      codice.innerHTML = Math.random()+1;
-      costo.innerHTML = prezzo.toFixed(2) + " €";
+        nomeTicket.innerHTML = formNome.value;
+        nomeOfferta.innerHTML = offerta;
+        carrozza.innerHTML = Math.floor(Math.random() * 10) +1;
+        codice.innerHTML = Math.random()+1;
+        costo.innerHTML = prezzo.toFixed(2) + " €";
       // Show ticket
-      sectionTicket.className = sectionTicket.classList + "ms_visible";
+        sectionTicket.className = sectionTicket.classList + "ms_visible";
     }
   );
 
   buttonAnnulla.addEventListener("click",
     function () {
       // delete ticket on error
-      errore.className = "ms_hidden";
+        errore.className = "ms_hidden";
       // delete name
-      formNome.value = "";
-      nomeTicket.innerHTML = "";
+        formNome.value = "";
+        nomeTicket.innerHTML = "";
       // delete km
-      formKm.value = "";
+        formKm.value = "";
       // reset age
-      formEta.value = "intero";
+        formEta.value = "intero";
       // delete offer
-      nomeOfferta.innerHTML = "";
+        nomeOfferta.innerHTML = "";
       // hide ticket
-      sectionTicket.classList.add("ms_hidden");
+        sectionTicket.classList.add("ms_hidden");
     }
   );
